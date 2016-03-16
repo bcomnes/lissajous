@@ -1,5 +1,5 @@
-// lisssajous generator from "The Go programming langauge" book
-package main
+// Package lisssajous generator from "The Go programming langauge" book
+package lisssajous
 
 import (
 	"image"
@@ -8,21 +8,17 @@ import (
 	"io"
 	"math"
 	"math/rand"
-	"os"
 )
 
 var palette = []color.Color{color.White, color.Black}
 
 const (
-	whiteIndex = 0
+	//whiteIndex = 0
 	blackIndex = 1
 )
 
-func main() {
-	lisssajous(os.Stdout)
-}
-
-func lisssajous(out io.Writer) {
+// Draw the gif and write it to out.
+func Draw(out io.Writer) {
 
 	const (
 		cycles  = 5     // number of complete oscillator revolutions
