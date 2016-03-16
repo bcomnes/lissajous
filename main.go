@@ -2,7 +2,7 @@
 package main
 
 import (
-	"github.com/bcomnes/lissajous"
+	"github.com/bcomnes/lissajous/lib"
 	"os"
 )
 
